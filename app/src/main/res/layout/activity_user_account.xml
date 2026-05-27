@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.user.UserAccountActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/lihat_akun_toolbar"
+        android:background="@drawable/bg_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp">
+            <ImageView
+                android:id="@+id/iv_lihat_akun_toolbar_back"
+                android:paddingTop="14dp"
+                android:paddingBottom="14dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_arrow_back_24"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/photo"
+                android:paddingEnd="24dp"
+                tools:ignore="RtlSymmetry" />
+            <TextView
+                android:textSize="18sp"
+                android:textColor="@color/black_solid"
+                android:id="@+id/tv_lihat_akun_toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/daftar_pengguna"
+                android:layout_centerInParent="true"
+                style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                tools:ignore="RelativeOverlap" />
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo_posyandu"
+                android:contentDescription="@string/logo"
+                android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:orientation="vertical"
+        android:id="@+id/lihat_akun_swipe_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/lihat_akun_toolbar">
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/ll_lihat_akun"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="1"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                app:cardCornerRadius="5dp">
+                <TableRow android:background="#51b435"
+                    tools:ignore="UselessParent">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        android:text="@string/nama"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        tools:ignore="TextContrastCheck" />
+
+                    <TextView
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        android:text="@string/alamat"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        tools:ignore="TextContrastCheck" />
+                </TableRow>
+            </TableLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_user_account"
+                android:layout_marginBottom="80dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</RelativeLayout>

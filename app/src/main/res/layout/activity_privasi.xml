@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.user.PrivacyActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/privacy_toolbar"
+        android:background="@drawable/bg_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp">
+            <ImageView
+                android:id="@+id/privacy_toolbar_back"
+                android:paddingTop="14dp"
+                android:paddingBottom="14dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_arrow_back_24"
+                android:contentDescription="@string/photo"
+                android:paddingEnd="24dp"
+                tools:ignore="RtlSymmetry" />
+            <TextView
+                android:textSize="18sp"
+                android:textColor="@color/black_solid"
+                android:id="@+id/privacy_toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/kebijakan_privasi_jdl"
+                android:layout_centerInParent="true"
+                style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                tools:ignore="VisualLintSystemUi" />
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <WebView
+        android:id="@+id/wv_privacy"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/privacy_toolbar"/>
+</RelativeLayout>

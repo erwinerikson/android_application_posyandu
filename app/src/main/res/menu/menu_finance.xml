@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:icon="@drawable/ic_baseline_paid_white_24"
+        android:enabled="true"
+        android:id="@+id/menu_masuk"
+        android:title="@string/masuk"/>
+    <item
+        android:icon="@drawable/ic_baseline_paid_white_24"
+        android:enabled="true"
+        android:id="@+id/menu_keluar"
+        android:title="@string/keluar"/>
+    <item
+        android:icon="@drawable/ic_baseline_rincian_white_24"
+        android:enabled="true"
+        android:id="@+id/menu_rincian"
+        android:title="@string/rincian"/>
+</menu>

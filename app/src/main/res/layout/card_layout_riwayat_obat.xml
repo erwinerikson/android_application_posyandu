@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:stretchColumns="1"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+    app:cardCornerRadius="5dp">
+    <TableRow tools:ignore="UselessParent">
+        <TextView
+            android:id="@+id/tv_cl_history_obat_tgl"
+            android:textSize="13sp"
+            android:padding="5dp"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:background="@drawable/border_table"
+            tools:ignore="VisualLintSystemUi" />
+        <TextView
+            android:id="@+id/tv_cl_history_obat_nama"
+            android:textSize="13sp"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/border_table"
+            tools:ignore="VisualLintSystemUi" />
+        <TextView
+            android:id="@+id/tv_cl_history_obat_qty"
+            android:textSize="13sp"
+            android:padding="5dp"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:background="@drawable/border_table"
+            tools:ignore="VisualLintSystemUi" />
+    </TableRow>
+</TableLayout>

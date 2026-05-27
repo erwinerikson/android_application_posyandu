@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".di.PosyanduApp"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Posyandu"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".ui.schedule.ScheduleOrgActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.medication.MedicationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.finance.FinanceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.sdidtk.SdidtkOrgActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.counseling.CounselingOrgActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.pregnant.PregnantActionImmunizationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.pregnant.PregnantOrgDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.mother.MotherOrgDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.data.ActionMedicationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.data.ActionCheckActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.elderly.ElderlyOrgDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.baby.BabyActionImmunizationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.baby.BabyOrgDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.elderly.ElderlyOrgActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.pregnant.PregnantOrgActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.mother.MotherOrgActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.baby.BabyOrgActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.registration.RegistrationOrgDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".use_case.registration.GetRegistrationOrgUseCase"
+            android:exported="false" />
+        <activity
+            android:name=".ui.user.UserAccountActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.registration.RegistrationOrgActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.user.OrganizerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.schedule.SchedulePubActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.history.HistoryPubActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.sdidtk.SdidtkPubActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.counseling.CounselingPubActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.pregnant.PregnantPubActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.elderly.ElderlyPubActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.mother.MotherPubActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.baby.BabyPubActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.registration.RegistrationPubActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.user.ChangePasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.user.UserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.user.PublicActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.user.PrivacyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.user.EditUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.schedule.EditScheduleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.user.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.user.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

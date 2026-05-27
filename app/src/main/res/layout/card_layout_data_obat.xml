@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tl_cl_data_obat"
+    android:stretchColumns="1"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+    app:cardCornerRadius="5dp">
+    <TableRow tools:ignore="UselessParent">
+        <TextView
+            android:id="@+id/tv_cl_data_obat_stok"
+            android:textSize="13sp"
+            android:background="@drawable/border_table"
+            android:padding="5dp"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:ignore="VisualLintSystemUi" />
+        <TextView
+            android:id="@+id/tv_cl_data_obat_nama"
+            android:textSize="13sp"
+            android:background="@drawable/border_table"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:ignore="VisualLintSystemUi" />
+        <TextView
+            android:id="@+id/tv_cl_data_obat_harga"
+            android:textSize="13sp"
+            android:background="@drawable/border_table"
+            android:padding="5dp"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="textEnd"
+            tools:ignore="VisualLintSystemUi" />
+    </TableRow>
+</TableLayout>

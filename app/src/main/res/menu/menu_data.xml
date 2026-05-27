@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:icon="@drawable/ic_baseline_medication_white_24"
+        android:enabled="true"
+        android:id="@+id/menu_obat"
+        android:title="@string/obat"/>
+    <item
+        android:icon="@drawable/ic_baseline_vaccines_white_24"
+        android:enabled="true"
+        android:id="@+id/menu_imunisasi"
+        android:title="@string/imunisasi"/>
+    <item
+        android:icon="@drawable/ic_baseline_person_search_white_24"
+        android:enabled="true"
+        android:id="@+id/menu_periksa"
+        android:title="@string/periksa"/>
+    <item
+        android:icon="@drawable/ic_baseline_midwife_white_24"
+        android:enabled="true"
+        android:id="@+id/menu_bidan"
+        android:title="@string/bidan"/>
+</menu>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:stretchColumns="1"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+    app:cardCornerRadius="5dp">
+    <TableRow tools:ignore="UselessParent">
+        <TextView
+            android:id="@+id/tv_cl_history_check_tgl"
+            android:textSize="13sp"
+            android:padding="5dp"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:background="@drawable/border_table"
+            tools:ignore="VisualLintSystemUi" />
+        <TextView
+            android:id="@+id/tv_cl_history_check_item"
+            android:textSize="13sp"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/border_table"
+            tools:ignore="VisualLintSystemUi" />
+        <TextView
+            android:id="@+id/tv_cl_history_check_tinggi"
+            android:textSize="13sp"
+            android:padding="5dp"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:background="@drawable/border_table"
+            tools:ignore="VisualLintSystemUi" />
+        <TextView
+            android:id="@+id/tv_cl_history_check_berat"
+            android:textSize="13sp"
+            android:padding="5dp"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="@string/emoji_search"
+            android:background="@drawable/border_table"
+            tools:ignore="VisualLintSystemUi" />
+        <!--<RelativeLayout
+            android:id="@+id/tv_cl_history_check_berat"
+            android:layout_width="65dp"
+            android:layout_height="27dp"
+            android:layout_weight="1"
+            android:background="@drawable/border_table">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/icon"
+            android:padding="4dp"
+            android:src="@drawable/ic_baseline_search_black_24"
+            android:textAlignment="center"
+            tools:ignore="VisualLintSystemUi" />
+        </RelativeLayout>-->
+    </TableRow>
+</TableLayout>
